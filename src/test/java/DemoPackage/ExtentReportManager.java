@@ -17,9 +17,7 @@ public class ExtentReportManager implements ITestNGListener{
 	public ExtentTest test; //creating test case entries in the report and update the status of the test methods
 	
 	public void onStart(ITestContext context) {
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "reports/myReport.html"); // Specify
-																											// the
-																											// location
+		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "reports/myReport.html");  // location
 																											// of the
 																											// report
 		sparkReporter.config().setDocumentTitle("Automation Report"); // Title of the report
